@@ -1,16 +1,16 @@
 # Debugging
 # breakpoints
 • breakpoints는 코드 실행 중 내가 break 해보고 싶은 point.<br/>
-• vsc에서는 코드라인 왼쪽 공백을 클릭 or 코드라인 클릭후 F9하면 빨간색점으로 breakpoint가 설정된다.<br/>
+• vscode에서는 코드라인 왼쪽 공백을 클릭 or 코드라인 클릭후 F9하면 빨간색점으로 breakpoint가 설정된다.<br/>
 • 또는 코드에 debugger를 작성해 breakpoints를 설정 가능.<br/>
 • reakpoints를 설정하고 debugging하면 break된 상황에 local,global various, call stack들을 볼 수 있다.<br/>
 
 # watch
 debugging을 할 때 watch에 + 버튼으로 표현식을 입력하면 breakpoints에서의 값들을 보여준다.<br/>
 ex)<br/>
-function fibonacci (n ){<br/>
-  if (n <2 )return n ;<br/>
-  const result =fibonacci (n -1 )+fibonacci (n -2 );<br/>
+function fibonacci (n){<br/>
+  if (n <2)return n ;<br/>
+  const result =fibonacci (n -1)+fibonacci (n -2);<br/>
   return result ;<br/>
 }
 watch에 result===5 를 추가하면<br/>
@@ -46,7 +46,7 @@ firstFunc();
 6. console.log("first"); callstack에서 firstFunc()제거<br/>
 
 callstack 확인하기 편리한 console.log<br/>
-console.log (new Error ().stack );<br/>
+console.log (new Error ().stack);<br/>
 # Step over / Step into / Step out
 
 continue (resume)<br/>
