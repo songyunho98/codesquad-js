@@ -1,12 +1,12 @@
 # Debugging
 # breakpoints
-• breakpoints는 코드 실행 중 내가 break 해보고 싶은 point.
-• vsc에서는 코드라인 왼쪽 공백을 클릭 or 코드라인 클릭후 F9하면 빨간색점으로 breakpoint가 설정된다.
-• 또는 코드에 debugger를 작성해 breakpoints를 설정 가능.
-• reakpoints를 설정하고 debugging하면 break된 상황에 local,global various, call stack들을 볼 수 있다.
+• breakpoints는 코드 실행 중 내가 break 해보고 싶은 point.<br/>
+• vsc에서는 코드라인 왼쪽 공백을 클릭 or 코드라인 클릭후 F9하면 빨간색점으로 breakpoint가 설정된다.<br/>
+• 또는 코드에 debugger를 작성해 breakpoints를 설정 가능.<br/>
+• reakpoints를 설정하고 debugging하면 break된 상황에 local,global various, call stack들을 볼 수 있다.<br/>
 
 # watch
-debugging을 할 때 watch에 + 버튼으로 표현식을 입력하면 breakpoints에서의 값들을 보여준다.__\\
+debugging을 할 때 watch에 + 버튼으로 표현식을 입력하면 breakpoints에서의 값들을 보여준다.
 ex)
 function fibonacci (n ){
   if (n <2 )return n ;
@@ -50,14 +50,14 @@ console.log (new Error ().stack );
 # Step over / Step into / Step out
 
 continue (resume)
-다음 breakpoint로 이동한다.__\\
+다음 breakpoint로 이동한다.
 
 •Step over
 (breakpoint라인에서)다음 라인으로 이동한다. 
-다음 라인이 함수일 경우 그 함수 내부로는 이동하지 않고 바로 실행한다.__\\
+다음 라인이 함수일 경우 그 함수 내부로는 이동하지 않고 바로 실행한다.
 •Step into
 step over 와 같이 다음 라인으로 이동한다.
-다음 라인이 함수 일경우 그 함수 안으로 들어가서 함수내부의 동작 한줄한줄 지나간다.__\\
+다음 라인이 함수 일경우 그 함수 안으로 들어가서 함수내부의 동작 한줄한줄 지나간다.
 •Step out
 현재 함수의 나머지 부분을 실행시키고 함수의 리턴이 완료된곳에서 멈춘다.
 step into로 함수로 들어간 뒤 바로 return으로 넘어가고싶을 때 사용하면 유용하다.
