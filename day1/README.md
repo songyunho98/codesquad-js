@@ -18,35 +18,8 @@ result===5: false 에서 result===5가 될 때  result===5 : true 로 바뀐�
 원하는 변수값을 표현식에 입력해도 변수 값이 나온다.<br/>
 
 # callstack
-콜스택은 인터프리터가 중척으로 함수들이 호출될때 to keep track of its place in script  위한 매커니즘이다.<br/>
-어떤함수가 현재 실행되고있고, 어떤함수 안에서 어떤함수가 호출돼 있는지 추적할 수 있게 해준다.<br/>
-스크립트에서 함수가 실행되면 함수를 추가하고 끝나면 콜스택에서 제거합니다.<br/>
-이 콜스택에 할당량보다 초과해서 들어가게 되면 stack overflow error  발생<br/>
-ex)<br/>
-function firstFunc() {<br/>
-  secondFunc();<br/>
-  console.log("first");<br/>
-}<br/>
-
-function secondFunc() {<br/>
-  thirdFunc();<br/>
-  console.log("second");<br/>
-}<br/>
-
-function thirdFunc() {<br/>
-  console.log("third");<br/>
-}<br/>
-
-firstFunc();
-1. firstFunc()호출, 빈 callstack생성 callstack에 firstFunc() 들어감<br/>
-2. secondFunc() 호출, callstack에 secondFunc() 들어감<br/>
-3. thirdFunc() 호출, callstack에 thirdFunc() 들어감<br/>
-4. console.log("third"); callstack에서 thirdFunc()제거<br/>
-5. console.log("second"); callstack에서 secondFunc()제거<br/>
-6. console.log("first"); callstack에서 firstFunc()제거<br/>
-
-callstack 확인하기 편리한 console.log<br/>
-console.log (new Error ().stack);<br/>
+콜스택이란 ‘함수의 호출 정보가 차곡차곡 쌓여있는 스택’을 의미한다. 프로그램 내에서 코드의 실행 순서를 기록하는 자료구조인 셈이다.<br/>
+콜스택 역시 스택이기 때문에 LIFO 방식으로 동작한다. 함수가 호출된 순서대로 스택에 추가되고(push)되고, 호출 순서와는 반대로 맨 마지막에 호출된 함수부터 실행되면서 스택에서 제거(pop)된다.<br/>
 # Step over / Step into / Step out
 
 continue (resume)<br/>
