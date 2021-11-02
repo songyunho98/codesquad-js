@@ -6,7 +6,7 @@
 • reakpoints를 설정하고 debugging하면 break된 상황에 local,global various, call stack들을 볼 수 있다.
 
 # watch
-debugging을 할 때 watch에 + 버튼으로 표현식을 입력하면 breakpoints에서의 값들을 보여준다.
+debugging을 할 때 watch에 + 버튼으로 표현식을 입력하면 breakpoints에서의 값들을 보여준다.__\\
 ex)
 function fibonacci (n ){
   if (n <2 )return n ;
@@ -50,13 +50,14 @@ console.log (new Error ().stack );
 # Step over / Step into / Step out
 
 continue (resume)
-다음 breakpoint로 이동한다.
-Step over
-(breakpoint라인에서)다음 라인으로 이동한다. (}도 포함해서 지나간다.)
-다음 라인이 함수일 경우 그 함수 내부로는 이동하지 않고 바로 실행한다.
-Step into
+다음 breakpoint로 이동한다.__\\
+
+•Step over
+(breakpoint라인에서)다음 라인으로 이동한다. 
+다음 라인이 함수일 경우 그 함수 내부로는 이동하지 않고 바로 실행한다.__\\
+•Step into
 step over 와 같이 다음 라인으로 이동한다.
-다음 라인이 함수 일경우 그 함수 안으로 들어가서 함수내부의 동작 한줄한줄 지나간다.
-Step out
+다음 라인이 함수 일경우 그 함수 안으로 들어가서 함수내부의 동작 한줄한줄 지나간다.__\\
+•Step out
 현재 함수의 나머지 부분을 실행시키고 함수의 리턴이 완료된곳에서 멈춘다.
 step into로 함수로 들어간 뒤 바로 return으로 넘어가고싶을 때 사용하면 유용하다.
