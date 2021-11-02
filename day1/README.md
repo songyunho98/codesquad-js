@@ -37,7 +37,7 @@ function thirdFunc() {<br/>
   console.log("third");<br/>
 }<br/>
 
-firstFunc();<br/>
+firstFunc();
 1. firstFunc()호출, 빈 callstack생성 callstack에 firstFunc() 들어감<br/>
 2. secondFunc() 호출, callstack에 secondFunc() 들어감<br/>
 3. thirdFunc() 호출, callstack에 thirdFunc() 들어감<br/>
