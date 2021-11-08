@@ -6,6 +6,20 @@
 OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오.
 */
 
-var fs = require('fs');
-var input = fs.readFileSync('/dev/stdin').toString().split(' ');
+const fs = require('fs');
+const input = fs.readFileSync('dev/stdin').toString().trim().split('\n');
 
+const caseNum = +input[0];
+for(i=1;i<=caseNum;i++){
+    let n = 0;
+    let sum = 0;
+    input[i].split('').forEach((el)=>{
+        if(el === 'O'){       
+            n++;
+            sum += n;
+        } else {
+            n = 0;
+        }
+    })
+    console.log(sum);
+}
