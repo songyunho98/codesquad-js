@@ -7,3 +7,5 @@ https://gist.github.com/crongro/ade2c3f74417fc202c8097214c965f27
 //실행결과
 ["width", "height", "hOffset", "vOffset", "size", "hOffset", "vOffset"]
 */
+
+const o = require('./o.js');
