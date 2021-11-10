@@ -2,8 +2,6 @@
 const peoples = ["crong!@#", "honux5", "sarah#", "hea3d", "zello", "5lucas"];
 function filterId(array) {
     const regExp = /[\{\}\[\]\/?.,;:|\)*~`!^\-+<>@\#$%&\\\=\(\'\"]/;
-
-    //const remove = peoples.splice(0, 3, 'honux5');
     
     // 특수 기호 포함 요소 제거
     for (let i = 0; i < array.length; i++) {
