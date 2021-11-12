@@ -1,8 +1,15 @@
 //6번 reduce만들기
 const arr = [1, 2, 3, 4, 5];
 const myReduce = (arr, callback, initialValue) => {
-    //여기에 구현
     
+    let result = initialValue;
+    for(let i = 0; i < arr.length; i++) {
+        result = callback(result, arr[i]);
+    }
+    return result;
 }
-const result = myReduce(arr, (next,prev) => next + prev, 0);
-console.log(result);
+const sum = (next, prev) => next + prev;
+
+//test
+const sumAnswer = myReduce(arr, sum, 0);
+console.log(sumAnswer);
