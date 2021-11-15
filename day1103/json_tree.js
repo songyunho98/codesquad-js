@@ -1,4 +1,4 @@
-[{
+const dataTree = [{
 	"id": 1,
 	"name": "Yong",
 	"phone": "010-0000-0000",
@@ -79,4 +79,4 @@
 	}]
 }]
 
-exports.data = data;
+exports.data = dataTree;
