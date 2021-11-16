@@ -45,24 +45,21 @@ class normalDistribution {
 constructor(data) {
     this.data = data;
 }
-// 평균
 getMean() {
     return this.data.reduce((a, b) => a + b) / this.data.length;
 }
-// 편차
 getDeviation() {
     return this.data.map(value => value - this.getMean());
 }
-// 분산
 getVariance() {
     return this.getDeviation().reduce((a, b) => a + Math.pow(b, 2), 0) / this.data.length;
 }
-// 표준편차
 getStandardDeviation() {
     return Math.sqrt(this.getVariance());
 }
-//정규분포
+getRatio() {
 
+}
 }
 
 //test
