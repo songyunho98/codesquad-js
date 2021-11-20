@@ -57,7 +57,19 @@ class findStudent {
     getStandardDeviation() {
         return Math.sqrt(this.getVariance());
     }
-    
+    getzIndex(score) { 
+        return Math.abs(score - this.getMean()) / this.getStandardDeviation();
+    }
+    getRegularDistribution(score) { 
+        const z = this.getzIndex(score) >= 3.5 ? '3.49' : this.getzIndex(score).toFixed(2);
+        const row = z.substr(0, 3)*10;
+        const col = z.substr(3, 4)*1;
+        return score < this.getMean() ? 1 -  zTable[row][col] : zTable[row][col];
+    }
+    getRegularDistributionPercent(score1, score2) { 
+        const gap = this.getRegularDistribution(score2) - this.getRegularDistribution(score1);
+        return `${(Math.abs(gap) * 100).toFixed(2)}%`;
+    }
 }
 
 //test
