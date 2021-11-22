@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
     <title>ToDo-List</title>
 </head>
 <body>
@@ -14,9 +13,9 @@
     </header>
     <section id="fill_out">
         <div id="my_form">
-            <input type="text" id="textInput" placeholder="New Task"/>
-            <input type="date" id="dateInput" placeholder="마감일을 선택하세요."/>
-            <button id="addButton">Add</button>
+            <input class="task_text" type="text" id="textInput" placeholder="New Task"/>
+            <input class="due_date" type="date" id="dateInput" placeholder="마감일을 선택하세요."/>
+            <a class="button" href="#">Add</a>
         </div>
     </section>
     <section id="list_out">
@@ -26,5 +25,7 @@
             </ul>
         </div>
     </section>
+    <script src="main.js" defer></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
 </html>
