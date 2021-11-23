@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+    font-weight: 100;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#fill_out {
+    margin-top: 3rem;
+}
+
+#my_form {
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+#list_out {
+    margin: 0px auto;
+    padding: 1rem;
+}
+
+input {
+    display: inline-block;
+    width: 50%;
+    margin: 0.6rem 1rem;
+    padding: 0.7rem;
+    border: 1px solid rgb(163, 160, 160);
+    border-radius: 5px;
+}
+
+input[type="date"] {
+    display: inline-block;
+    width: 8rem;
+    cursor: pointer;
+}
+
+button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 1.5px;
+}
+
