@@ -64,3 +64,44 @@ button:focus {
     border: 1.5px solid black;
 }
   
+.items {
+    list-style: none;
+    padding: 0;
+    height: 500px;
+}
+  
+.content__checkbox:hover {
+    cursor: pointer;
+}
+  
+input:checked + span {
+    color: black;
+    text-decoration: line-through;
+}
+  
+.item {
+    display: flex;
+    background-color: white;
+    width: 450px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    justify-content: space-between;
+    border: 1.5px solid black;
+}
+  
+.content__text {
+    margin-left: 10px;
+}
+  
+.item__delete {
+    font-size: 20px;
+    border-style: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.item__delete:hover {
+    color: red;
+    transform: scale(1.1);
+}
