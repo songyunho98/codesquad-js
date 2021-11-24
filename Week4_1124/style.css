@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+    color: black;
+    font-weight: 100;
+    font-size: 40ox;
+    font-family: sans-serif;
+}
+
+.toggle {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #545454;
+    font-size: 20px;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.toogle:focus {
+    outline: none;
+}
+
+.fruit {
+    padding-left: 0%;
+    margin-top: 10px;
+}
+
+.fruit li {
+    list-style: none;
+    width: 200px;
+    height: 50px;
+    background-color: #dfb886;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
